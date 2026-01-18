@@ -2,27 +2,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    font-family: "Segoe UI", Arial, sans-serif;
 }
 
-/* Overall background */
 body {
-    background-color: #f1f5f9;
-    color: #1e293b;
+    background-color: #eef2f7;
+    color: #1f2937;
 }
 
 /* Header */
 header {
-    background-color: #0f172a;
-    color: #ffffff;
-    padding: 60px 20px;
+    background: #0b132b;
+    color: white;
     text-align: center;
+    padding: 60px 20px;
 }
 
 header h1 {
-    font-size: 2.7rem;
-    margin-bottom: 12px;
-    letter-spacing: 0.5px;
+    font-size: 2.6rem;
+    margin-bottom: 10px;
 }
 
 header p {
@@ -30,13 +28,13 @@ header p {
     opacity: 0.85;
 }
 
-/* Navigation bar */
+/* Navigation */
 nav {
-    background-color: #020617;
+    background-color: #1c2541;
+    padding: 14px;
     display: flex;
     justify-content: center;
     gap: 25px;
-    padding: 15px;
 }
 
 nav a {
@@ -44,63 +42,57 @@ nav a {
     text-decoration: none;
     font-weight: 500;
     font-size: 0.95rem;
-    padding: 6px 10px;
 }
 
 nav a:hover {
-    color: #38bdf8;
+    color: #5bc0be;
 }
 
-/* Main content box */
+/* Content */
 .container {
     max-width: 900px;
-    margin: 50px auto;
-    background-color: #ffffff;
+    margin: 45px auto;
+    background-color: white;
     padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
-/* Section headings */
 .container h2 {
+    margin-bottom: 15px;
     font-size: 1.6rem;
-    margin-bottom: 18px;
-    color: #0f172a;
-    border-left: 4px solid #38bdf8;
+    color: #0b132b;
+    border-left: 4px solid #5bc0be;
     padding-left: 12px;
 }
 
-/* Paragraphs */
 .container p {
-    font-size: 1rem;
+    margin-bottom: 15px;
     line-height: 1.75;
-    margin-bottom: 16px;
-    color: #334155;
+    color: #374151;
 }
 
-/* Lists */
 .container ul,
 .container ol {
-    margin-left: 20px;
+    margin-left: 22px;
     margin-bottom: 20px;
 }
 
 .container li {
     margin-bottom: 10px;
-    line-height: 1.6;
 }
 
 /* Footer */
 footer {
-    background-color: #0f172a;
+    background-color: #0b132b;
     color: #cbd5f5;
     text-align: center;
     padding: 18px;
+    margin-top: 70px;
     font-size: 0.9rem;
-    margin-top: 80px;
 }
 
-/* Mobile responsiveness */
+/* Mobile */
 @media (max-width: 768px) {
     header h1 {
         font-size: 2.1rem;
