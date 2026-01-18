@@ -2,27 +2,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Segoe UI", Arial, sans-serif;
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
 }
 
-/* Page background */
+/* Overall background */
 body {
-    background: linear-gradient(135deg, #e2e8f0, #f8fafc);
+    background-color: #f1f5f9;
     color: #1e293b;
-    min-height: 100vh;
 }
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #0f172a, #1e293b);
-    color: white;
+    background-color: #0f172a;
+    color: #ffffff;
+    padding: 60px 20px;
     text-align: center;
-    padding: 50px 20px;
 }
 
 header h1 {
-    font-size: 2.6rem;
-    margin-bottom: 10px;
+    font-size: 2.7rem;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
 }
 
 header p {
@@ -35,74 +35,84 @@ nav {
     background-color: #020617;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 14px;
+    gap: 25px;
+    padding: 15px;
 }
 
 nav a {
     color: #e5e7eb;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 0.95rem;
     padding: 6px 10px;
-    border-radius: 5px;
 }
 
 nav a:hover {
-    background-color: #1e293b;
+    color: #38bdf8;
 }
 
-/* Main content container */
+/* Main content box */
 .container {
     max-width: 900px;
-    margin: 40px auto;
-    background-color: white;
-    padding: 35px;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
-/* Headings */
+/* Section headings */
 .container h2 {
     font-size: 1.6rem;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
     color: #0f172a;
+    border-left: 4px solid #38bdf8;
+    padding-left: 12px;
 }
 
-/* Text */
+/* Paragraphs */
 .container p {
     font-size: 1rem;
-    margin-bottom: 15px;
-    line-height: 1.7;
+    line-height: 1.75;
+    margin-bottom: 16px;
+    color: #334155;
 }
 
+/* Lists */
 .container ul,
 .container ol {
-    padding-left: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 .container li {
     margin-bottom: 10px;
+    line-height: 1.6;
 }
 
 /* Footer */
 footer {
-    background-color: #020617;
+    background-color: #0f172a;
     color: #cbd5f5;
     text-align: center;
     padding: 18px;
-    margin-top: 60px;
     font-size: 0.9rem;
+    margin-top: 80px;
 }
 
-/* Responsive adjustment */
-@media (max-width: 600px) {
+/* Mobile responsiveness */
+@media (max-width: 768px) {
     header h1 {
-        font-size: 2rem;
+        font-size: 2.1rem;
     }
 
     .container {
-        margin: 20px;
-        padding: 25px;
+        margin: 25px 15px;
+        padding: 28px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
     }
 }
